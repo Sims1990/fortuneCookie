@@ -9,7 +9,7 @@ echo "mysql-server mysql-server/root_password_again password password" | sudo de
 
 sudo apt install mysql-server -y
 
-mysql --user=root --password='password' < ~/FlaskSettings/dbsetup.txt
+mysql --user=root --password='password' < ~/**/FlaskSettings/dbsetup.txt
 
 #Apache Installation
 sudo apt install apache2 -y
@@ -24,9 +24,9 @@ sudo pip install boto3
 sudo pip install requests
 sudo pip install mysql-connector-python
 
-sudo ln -sT ~/FlaskSettings /var/www/html/flask
+sudo ln -sT ~/**/FlaskSettings /var/www/html/flask
 
-sudo mv ~/FlaskSettings/apacheconf.txt /etc/apache2/sites-enabled/000-default.conf
+sudo mv ~/**/FlaskSettings/apacheconf.txt /etc/apache2/sites-enabled/000-default.conf
 
 sudo apachectl restart
 
