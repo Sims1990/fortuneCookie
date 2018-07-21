@@ -1,0 +1,66 @@
+input,
+
+body {
+    background-color: rgb(231, 224, 224)
+}
+
+button {
+    font: 18px "Trebuchet MS", sans-seriff;
+    padding: 15px;
+}
+.wrapper {
+    text-align: center
+}
+
+.mainbutton {
+    background-color: black;
+    float: right;
+}
+.main {
+	width:100%;
+	height:200px;
+	}
+
+.menu {
+overflow: hidden;
+background-color: #17b3be;
+list-style-type: none;
+}/* Menu */
+
+.menu a {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 0;
+    
+}/* Nav bar Links*/
+
+.menu a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+
+.topmenu {
+    overflow: hidden;
+    background-color: #ff3333;
+    list-style-type: none;
+}
+
+.topmenu a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 0;
+}
+
+.footbar {
+
+}

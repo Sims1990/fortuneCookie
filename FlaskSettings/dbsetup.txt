@@ -1,0 +1,22 @@
+CREATE DATABASE FortuneTest;
+
+USE FortuneTest;
+
+CREATE TABLE Entry
+(ID INTEGER(2) NOT NULL AUTO_INCREMENT,
+BODY VARCHAR(100) NOT NULL,
+PRIMARY KEY (ID));
+
+INSERT  INTO Entry(ID,BODY)
+VALUES('1','Ignore previous fortunes'),
+        ('2','You have been poisoned'),
+        ('3','The fortune you seek is in another cookie'),
+        ('4','Flattery will go far tonight'),
+        ('5','Shame on you for thinking a website is psychic'),
+        ('6','Pigeon poop burns the retina for 13 hours. You will learn this the hard way.'),
+        ('7','Write another novel'),
+        ('8','Your persistence will pay off'),
+        ('9','Confucious say: Tweeting is next to godliness'),
+        ('10','In your beginning, you will find your end'),
+        ('11','You will live a long and happy life'),
+        ('12','Little and often makes much');

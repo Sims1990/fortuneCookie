@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block content %}
+
+        
+    <div class="wrapper">    
+        <h2>Submit Fortune below:</h2>
+    </div>
+
+    <br/>
+
+{% for fortune in fortunes %}
+    <div class="wrapper">
+	{{ fortune }}
+</div>
+{% endfor %}
+
+    <div class="wrapper">
+
+	<form action="/Submit" method="POST">
+        <textarea cols="80" rows="8" name="contents" placeholder="Enter a Fortune">
+            
+        </textarea>
+<br />
+<br />
+	<input type="submit" class="btn btn-success" value="Submit">
+	</form>
+  
+
+ </div>
+
+{% endblock %}

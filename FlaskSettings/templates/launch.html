@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+
+        
+    <div class="wrapper">    
+        <h3>Fortune below:</h3>
+    </div>
+
+    <br/>
+
+{% for info in data %}
+   <div class="wrapper">
+
+	{{ info }}
+</div>
+{% endfor %}
+
+{% endblock %}
