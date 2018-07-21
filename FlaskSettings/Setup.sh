@@ -9,6 +9,8 @@ echo "mysql-server mysql-server/root_password_again password password" | sudo de
 
 sudo apt install mysql-server -y
 
+/etc/init.d/mysql start
+
 mysql --user=root --password='password' < ~/**/FlaskSettings/dbsetup.txt
 
 #Apache Installation
